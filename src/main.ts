@@ -1,4 +1,5 @@
 import dotenv from 'dotenv';
+import { convertToWebp } from './convertToWebp.js';
 
 dotenv.config({ path: '.env.local' });
 
@@ -18,3 +19,5 @@ type DownloadAssetsOptions = {
 //
 
 console.log('OK!');
+
+convertToWebp({ dir: './example/' });
